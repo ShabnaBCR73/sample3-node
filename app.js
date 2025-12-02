@@ -14,4 +14,5 @@ app.get('/' , (req,res) => {
     res.render('table' , {students});
 });
 
-app.listen(3000 , () => console.log('server running'));
+const PORT = process.env.PORT || 3003;
+app.listen(PORT , () => console.log('server running',PORT));
